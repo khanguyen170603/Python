@@ -1,6 +1,15 @@
-import tkinter as tk
-root = tk.Tk()
-root.geometry("800x600")
-title = tk.Label(root,text="Hello")
-title.grid(row=0,column=0)
-root.mainloop()
+"""Entrypoint to start the Tkinter Movie Booking UI."""
+
+from tkinter import Tk
+
+from ui.main_window import MainWindow
+
+
+def main():
+	root = Tk()
+	app = MainWindow(root)
+	root.mainloop()
+
+
+if __name__ == '__main__':
+	main()

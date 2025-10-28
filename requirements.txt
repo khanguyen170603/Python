@@ -1,0 +1,2 @@
+# No required external packages for basic UI. Optional:
+Pillow>=9.0.0  # for image handling (optional)
